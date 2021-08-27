@@ -1,57 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Cadastro Pessoal</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <form action="">
-            <div class="container2">
-                <div class="logo-itau"></div>
-                <div class="container-dados">
-                    <div class="campo-nome"></div>
-                        <label for="nome">Informe o seu nome: </label>
-                        <input type="text" id="nome" name="nome" placeholder="Nome"><br><br>
-
-                    /*<div class="informe-nome">
-                        <input type="text" >
-                    </div>*/
-
-                    <div class="campo-sobrenome"></div>
-                    <div class="informe-sobrenome"></div>
-                    <div class="campo-cpf"></div>
-                    <div class="informe-cpf"></div>
-                    <div class="campo-genero"></div>
-                    <div class="campo-email"></div>
-                    <div class="informe-email"></div>
-                    <div class="campo-cep"></div>
-                    <div class="informe-cep"></div>
-                    <div class="campo-estado"></div>
-                    <div class="informe-estado"></div>
-                    <div class="campo-cidade"></div>
-                    <div class="informe-cidade"></div>
-                    <div class="campo-endereco"></div>
-                    <div class="informe-endereco"></div>
-                    <div class="informe-genero"></div>
-                    <div class="campo-telefone"></div>
-                    <div class="informe-telefone"></div>
-                </div>
-                <div class="Titulo"></div>
-                <div class="container-termos">
-                    <div class="enviar"></div>
-                    <div class="titulo-termos"></div>
-                    <div class="campo-termos">
-                        <div class="descricao-termo"></div>
-                            <p> Enviando este formulário você aceita e concorda com os termos de Política de Privacidade e com a LGPD vigente.</p>
-                        <div class="botao-termo"></div>
-                        <button>Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </form>
+    <div>
+        <h1>Cadastro Pessoal</h1>
+        <p>Preencha os campos abaixo</p>
     </div>
+
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome: </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>CPF: </label>
+                <input type="text" name="cpf" id="cpf">
+            </div>
+            <div>
+                <label>RG: </label>
+                <input type="text" name="rg" id="rg">
+            </div>
+            <div>
+                <label>Sexo: </label>
+                <select name="sexo" id="sexo">
+                    <option value="blank">-</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+                <!--<label>
+                    <input type="radio" name="sexo" value="sexoM">Masculino
+                </label>
+                <label>
+                    <input type="radio" name="sexo" value="sexoF">Feminino  
+                </label> -->
+            </div>
+
+            <div>
+                <label>Endereço: </label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div>
+                <label>Número: </label>
+                <input type="number" name="numero" id="numero">
+            </div>
+            <div>
+                <label>Bairro: </label>
+                <input type="text" name="bairro" id="bairro">
+            </div>
+            <div>
+                <label>Cidade: </label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+            <div>
+                <label>Estado: </label>
+                <input type="text" name="estado" id="estado">
+            </div>
+            <div>
+                <label>CEP: </label>
+                <input type="text" name="cep" id="cep">
+            </div>
+            <div>
+                <label>Telefone Fixo: </label>
+                <input type="text" name="telefoneFixo" id="telefoneFixo">
+            </div>
+            <div>
+                <label>Telefone Celular: </label>
+                <input type="text" name="telefoneCelular" id="telefoneCelular">
+            </div>
+            <div class="termo">
+                <p></p>
+                <input type="checkbox" name="enviar" id="enviar"> Enviando este formulário você aceita e concorda com os termos de Política de Privacidade e com a LGPD vigentes.
+
+            </div>
+            <button>Enviar</button>
+
+        </fieldset>
+    </form>
 </body>
 </html>
