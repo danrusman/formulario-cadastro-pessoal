@@ -42,99 +42,83 @@
 }
 
 .campo-nome {
-
   align-self: center;
   grid-area: campo-nome;
 }
 
 .informe-nome {
-
   align-self: start;
   grid-area: informe-nome;
 }
 
 .campo-sobrenome {
-
   justify-self: stretch;
   align-self: center;
   grid-area: campo-sobrenome;
 }
 
 .informe-sobrenome {
-
   align-self: start;
   grid-area: informe-sobrenome;
 }
 
 .campo-cpf {
-
   justify-self: stretch;
   align-self: center;
   grid-area: campo-cpf;
 }
 
 .informe-cpf {
-
   align-self: start;
   grid-area: informe-cpf;
 }
 
 .campo-genero {
-
   align-self: center;
   grid-area: campo-genero;
 }
 
 .campo-email {
-
   align-self: center;
   grid-area: campo-email;
 }
 
 .informe-email {
-
   align-self: start;
   grid-area: informe-email;
 }
 
 .campo-cep {
-
   align-self: center;
   grid-area: campo-cep;
 }
 
 .informe-cep {
-
   align-self: start;
   grid-area: informe-cep;
 }
 
 .campo-estado {
-
   align-self: center;
   grid-area: campo-estado;
 }
 
 .informe-estado {
-
   align-self: start;
   grid-area: informe-estado;
 }
 
 .campo-cidade {
-
   align-self: center;
   grid-area: campo-cidade;
 }
 
 .informe-cidade {
-
   align-self: start;
   grid-area: informe-cidade;
 }
 
 .campo-endereco {
-
   align-self: center;
   grid-area: campo-endereco;
 }
@@ -142,19 +126,16 @@
 .informe-endereco { grid-area: informe-endereco; }
 
 .informe-genero {
-
   align-self: center;
   grid-area: informe-genero;
 }
 
 .campo-telefone {
-
   align-self: center;
   grid-area: campo-telefone;
 }
 
 .informe-telefone {
-
   align-self: start;
   grid-area: informe-telefone;
 }
@@ -180,14 +161,12 @@
 }
 
 .enviar {
-
   justify-self: center;
   align-self: center;
   grid-area: enviar;
 }
 
 .titulo-termos {
-
   justify-self: stretch;
   align-self: center;
   grid-area: titulo-termos;
@@ -209,14 +188,12 @@
 .descricao-termo { grid-area: descricao-termo; }
 
 .botao-termo {
-
   justify-self: center;
   align-self: center;
   grid-area: botao-termo;
 }
 
 .logo-itau {
-
   justify-self: center;
   align-self: center;
   grid-area: 1 / 1 / 2 / 2;
