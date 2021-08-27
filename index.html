@@ -14,7 +14,7 @@
     </div>
 
     <form>
-        <fieldset>
+        <fieldset id="dados">
             <div>
                 <label>Nome: </label>
                 <input type="text" name="nome" id="nome">
@@ -30,7 +30,7 @@
             <div>
                 <label>Sexo: </label>
                 <select name="sexo" id="sexo">
-                    <option value="blank">-</option>
+                    <option value="selecione" selected>Selecione</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                 </select>
@@ -75,12 +75,9 @@
                 <input type="text" name="telefoneCelular" id="telefoneCelular">
             </div>
             <div class="termo">
-                <p></p>
-                <input type="checkbox" name="enviar" id="enviar"> Enviando este formulário você aceita e concorda com os termos de Política de Privacidade e com a LGPD vigentes.
-
+                <input type="checkbox" name="verificacao" id="verificacao"> Enviando este formulário você aceita e concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
+                <button type="submit" name="enviar" id="enviar">Enviar</button>
             </div>
-            <button>Enviar</button>
-
         </fieldset>
     </form>
 </body>
