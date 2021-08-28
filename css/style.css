@@ -58,7 +58,16 @@ label {
     text-align: justify;
 }
 
-button {
+#buscarCep {
+    background: #003399;
+    border: none;
+    color: #fefc03;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+#enviar {
     width: 100%;
     background: #003399;
     border: none;
@@ -68,18 +77,19 @@ button {
     margin: 0 0 20px 0;
 }
 
-button:hover {
+#enviar:hover, #buscarCep:hover {
     background: #011b4e;
 }
 
-button:active {
+#enviar:active, #buscarCep:active {
     background: #000c23;
 }
 
-.cpf, .rg {
-    width: 50%;
-    float: left;
+.cpf, .rg, .sexo, #cep {
+    width: 30%;
+    display: flexbox;
 }
+
 
 p {
     text-align: center;

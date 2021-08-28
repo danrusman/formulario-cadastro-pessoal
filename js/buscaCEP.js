@@ -1,9 +1,9 @@
-function limpa_formulário_cep() {
+function buscarCep() {
     //Limpa valores do formulário de cep.
     document.getElementById('endereco').value=("");
     document.getElementById('bairro').value=("");
     document.getElementById('cidade').value=("");
-    document.getElementById('estado').value=("");
+    document.getElementById('uf').value=("");
 }
 
 function meu_callback(conteudo) {
@@ -12,10 +12,10 @@ function meu_callback(conteudo) {
         document.getElementById('endereco').value=(conteudo.logradouro);
         document.getElementById('bairro').value=(conteudo.bairro);
         document.getElementById('cidade').value=(conteudo.localidade);
-        document.getElementById('estado').value=(conteudo.estado);
+        document.getElementById('uf').value=(conteudo.uf);
     } else {
         //CEP não Encontrado.
-        limpa_formulário_cep();
+        buscarCep();
         alert("CEP não encontrado.");
     }
 }
@@ -38,7 +38,7 @@ function pesquisacep(valor) {
             document.getElementById('endereco').value="...";
             document.getElementById('bairro').value="...";
             document.getElementById('cidade').value="...";
-            document.getElementById('estado').value="...";
+            document.getElementById('uf').value="...";
 
             //Cria um elemento javascript.
             var script = document.createElement('script');
@@ -50,11 +50,11 @@ function pesquisacep(valor) {
             document.body.appendChild(script);
         } else {
             //cep é inválido.
-            limpa_formulário_cep();
+            buscarCep();
             alert("Formato de CEP inválido.");
         }
     } else {
         //cep sem valor, limpa formulário.
-        limpa_formulário_cep();
+        buscarCep();
     }
 }
