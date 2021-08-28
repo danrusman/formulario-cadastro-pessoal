@@ -1,85 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Cadastro Pessoal</title>
-    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div>
-        <h1>Cadastro Pessoal</h1>
-        <p>Preencha os campos abaixo</p>
+        <h1 id="titulo">Cadastro Pessoal</h1>
+        <p id="subtitulo">Preencha os campos abaixo</p>
     </div>
 
     <form>
-        <fieldset id="dados">
-            <div>
-                <label>Nome: </label>
-                <input type="text" name="nome" id="nome">
-            </div>
-            <div>
-                <label>CPF: </label>
-                <input type="text" name="cpf" id="cpf">
-            </div>
-            <div>
-                <label>RG: </label>
-                <input type="text" name="rg" id="rg">
-            </div>
-            <div>
-                <label>Sexo: </label>
-                <select name="sexo" id="sexo">
-                    <option value="selecione" selected>Selecione</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                </select>
-                <!--<label>
-                    <input type="radio" name="sexo" value="sexoM">Masculino
-                </label>
-                <label>
-                    <input type="radio" name="sexo" value="sexoF">Feminino  
-                </label> -->
+        <fieldset class="dados">
+            <div class="campo">
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>CEP: </label>
+            <div class="campo">
+                <label for="cpf">CPF: </label>
+                <input type="text" name="cpf" id="cpf" required>
+            </div>
+
+            <div class="campo">
+                <label for="rg">RG: </label>
+                <input type="text" name="rg" id="rg">
+            </div>
+
+            <div class="campo">
+                <label for="sexo">Sexo: </label>
+                <select name="sexo" id="sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="cep">CEP: </label>
                 <input type="text" name="cep" id="cep">
             </div>
-            <div>
-                <label>Estado: </label>
+
+            <div class="campo">
+                <label for="estado">Estado: </label>
                 <input type="text" name="estado" id="estado">
             </div>
-            <div>
-                <label>Cidade: </label>
+
+            <div class="campo">
+                <label for="cidade">Cidade: </label>
                 <input type="text" name="cidade" id="cidade">
             </div>
-            <div>
-                <label>Bairro: </label>
+
+            <div class="campo">
+                <label for="bairro">Bairro: </label>
                 <input type="text" name="bairro" id="bairro">
             </div>
 
-            <div>
-                <label>Endereço: </label>
-                <input type="text" name="endereco" id="endereco">
+            <div class="campo">
+                <label for="endereco">Endereço: </label>
+                <input type="text" name="endereco" id="endereco" required>
             </div>
-            <div>
-                <label>Número: </label>
-                <input type="number" name="numero" id="numero">
+
+            <div class="campo">
+                <label for="numero">Número: </label>
+                <input type="number" name="numero" id="numero" required>
             </div>
-            <div>
-                <label>Telefone Celular: </label>
-                <input type="text" name="telefoneCelular" id="telefoneCelular">
+
+            <div class="campo">
+                <label for="telefoneCelular">Telefone Celular: </label>
+                <input type="text" name="telefoneCelular" id="telefoneCelular" required>
             </div>
-            <div>
-                <label>Telefone Fixo: </label>
+
+            <div class="campo">
+                <label for="telefoneFixo">Telefone Fixo: </label>
                 <input type="text" name="telefoneFixo" id="telefoneFixo">
             </div>
+
             <div class="termo">
                 <input type="checkbox" name="verificacao" id="verificacao"> Enviando este formulário você aceita e concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
-                <button type="submit" name="enviar" id="enviar">Enviar</button>
+                <button class="botao" type="submit" name="enviar" id="enviar">Enviar</button>
             </div>
+
         </fieldset>
+
     </form>
 </body>
 </html>
