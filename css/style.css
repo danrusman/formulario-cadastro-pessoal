@@ -1,0 +1,58 @@
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+input, select{
+    background: #ccc;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    width: 90%;
+}
+label {
+    padding: 15px 0 0 0 ;
+    display: block;
+    font-weight: bold;
+    clear: both;
+}
+.termo input{
+    display: inline;
+    padding: 10px;
+    width: 10px;
+}
+.termo {
+    width: 80%;
+    padding: 10px;
+    background: #666;
+    margin:  15px auto;
+    border-radius: 5px;
+    color: #fff;
+}
+button {
+    width: 100%;
+    background: #999;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 0 0 50px 0;
+}
+button:hover{
+    background: #000;
+}
+button:active{
+    background: #333;
+}
+.cpf, .rg{
+    width: 50%;
+    float: left;
+}
+
