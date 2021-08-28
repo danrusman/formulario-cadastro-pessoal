@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
         <p>Preencha os campos abaixo</p>
     </div>
 
-    <form method="GET" action=".">
+    <form method="POST" action="" id="formulario" name="formulario">
         <fieldset id="dados">
             <div>
                 <label class="campo">Nome</label>
@@ -54,7 +54,7 @@
 
             <div>
                 <label class="campo">Estado</label>
-                <input name="uf" type="text" id="uf" size="2" />
+                <input name="estado" type="text" id="estado" size="2" />
                 <!--<input type="text" name="estado" id="estado">-->
             </div>
 
@@ -92,10 +92,10 @@
             </div>
 
             <div class="termo">
-                <input type="checkbox" name="verificacao" id="verificacao"> Enviando este formulário você aceita e
+                <input type="checkbox" name="termo" id="termo"> Enviando este formulário você aceita e
                 concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
             </div>
-            <button type="submit" name="enviar" id="enviar">Enviar</button>
+            <button type="submit" name="enviar" id="enviar" onclick="validar()">Enviar</button>
         </fieldset>
     </form>
 
