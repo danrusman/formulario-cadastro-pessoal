@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
-
     <div>
+        <img id="logoItau" src="imagens/logo_itau.png" alt="Logo do Itaú">
         <h1>Cadastro Pessoal</h1>
         <p>Preencha os campos abaixo</p>
     </div>
@@ -20,74 +19,82 @@
     <form>
         <fieldset id="dados">
             <div>
-                <label>Nome: </label>
-                <input type="text" name="nome" id="nome">
+                <label class="campo">Nome</label>
+                <input type="text" name="nome" id="nome" required>
             </div>
+
             <div class="cpf">
-                <label>CPF: </label>
-                <input type="text" name="cpf" id="cpf">
+                <label class="campo">CPF</label>
+                <input type="text" name="cpf" id="cpf" required>
             </div>
+
             <div class="rg">
-                <label>RG: </label>
+                <label class="campo">RG</label>
                 <input type="text" name="rg" id="rg">
             </div>
-            <div>
-                <label>Sexo: </label>
+
+            <div class="sexo">
+                <label class="campo">Sexo</label>
                 <select name="sexo" id="sexo">
-                    <option value="selecione" selected>Selecione</option>
+                    <option selected disabled value="">Selecione</option>
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                 </select>
-                <!--<label>
-                    <input type="radio" name="sexo" value="sexoM">Masculino
-                </label>
-                <label>
-                    <input type="radio" name="sexo" value="sexoF">Feminino  
-                </label> -->
             </div>
 
             <div>
-                <label>CEP: </label>
+                <label class="campo">CEP</label>
                 <input type="text" name="cep" id="cep">
             </div>
+
             <div>
-                <label>Estado: </label>
+                <label class="campo">Estado</label>
                 <input type="text" name="estado" id="estado">
             </div>
+
             <div>
-                <label>Cidade: </label>
+                <label class="campo">Cidade</label>
                 <input type="text" name="cidade" id="cidade">
             </div>
+
             <div>
-                <label>Bairro: </label>
+                <label class="campo">Bairro</label>
                 <input type="text" name="bairro" id="bairro">
             </div>
 
             <div>
-                <label>Endereço: </label>
-                <input type="text" name="endereco" id="endereco">
+                <label class="campo">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required>
             </div>
+
             <div>
-                <label>Número: </label>
-                <input type="text" name="numero" id="numero">
+                <label class="campo">Número</label>
+                <input type="text" name="numero" id="numero" required>
             </div>
-            <div>
-                <label>Telefone Celular: </label>
-                <input type="text" name="telefoneCelular" id="telefoneCelular">
+
+            <div class="campo">
+                <label>Telefone Celular</label>
+                <input type="text" name="telefoneCelular" id="telefoneCelular" required>
             </div>
-            <div>
-                <label>Telefone Fixo: </label>
+
+            <div class="campo">
+                <label>Telefone Fixo</label>
                 <input type="text" name="telefoneFixo" id="telefoneFixo">
             </div>
+
             <div class="termo">
                 <input type="checkbox" name="verificacao" id="verificacao"> Enviando este formulário você aceita e
                 concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
-
             </div>
             <button type="submit" name="enviar" id="enviar">Enviar</button>
         </fieldset>
+    </form>
 
+    <footer>
+        <div>
+            <p>© 2021 - Todos os direitos reservados.</p>
         </div>
+    </footer>
 </body>
 
 </html>
