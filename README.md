@@ -12,7 +12,7 @@ Desenvolvimento de uma página de formulário de cadastro pessoal.
 - JavaScript</br>
 
 ### Hospedagem
-- Netlify, link: (Em breve)
+- Netlify, link: https://danrusman-cadastro-pessoal.netlify.app/
 
 ### Autoria
 - [Daniel Russo Manrique](https://github.com/danrusman)
