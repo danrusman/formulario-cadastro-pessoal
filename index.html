@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Pessoal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src='js/buscaCEP.js'></script>
+    <script src='js/validacao.js'></script>
+
 </head>
 
 <body>
@@ -16,7 +19,7 @@
         <p>Preencha os campos abaixo</p>
     </div>
 
-    <form>
+    <form method="GET" action=".">
         <fieldset id="dados">
             <div>
                 <label class="campo">Nome</label>
@@ -44,27 +47,33 @@
 
             <div>
                 <label class="campo">CEP</label>
-                <input type="text" name="cep" id="cep">
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
+                <!--<input type="text" name="cep" id="cep">-->
+                <button type="button" name="buscarCep">Buscar CEP</button>
             </div>
 
             <div>
                 <label class="campo">Estado</label>
-                <input type="text" name="estado" id="estado">
+                <input name="uf" type="text" id="uf" size="2" />
+                <!--<input type="text" name="estado" id="estado">-->
             </div>
 
             <div>
                 <label class="campo">Cidade</label>
-                <input type="text" name="cidade" id="cidade">
+                <input name="cidade" type="text" id="cidade" size="40" />
+                <!--<input type="text" name="cidade" id="cidade">-->
             </div>
 
             <div>
                 <label class="campo">Bairro</label>
-                <input type="text" name="bairro" id="bairro">
+                <input name="bairro" type="text" id="bairro" size="40"/>
+                <!--<input type="text" name="bairro" id="bairro">-->
             </div>
 
             <div>
                 <label class="campo">Endereço</label>
-                <input type="text" name="endereco" id="endereco" required>
+                <input name="endereco" type="text" id="endereco" size="60" required/>
+                <!--<input type="text" name="endereco" id="endereco" required>-->
             </div>
 
             <div>
