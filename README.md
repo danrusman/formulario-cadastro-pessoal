@@ -1,7 +1,7 @@
 # Formulário de cadastro Pessoal
 
 ### Descrição
-Desenvolvimento de uma página de formulário de cadastro pessoal.
+Desenvolvimento de uma página de formulário de cadastro pessoal.</br>
 Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-gama/tree/main/cadastro%20simples/atracao
 
 ### Ferramenta
