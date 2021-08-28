@@ -23,3 +23,4 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 - Busca de CEP: https://viacep.com.br/exemplo/javascript/
 - Cores do Itaú: https://www.colourlovers.com/palette/3917229/ita%C3%BA
 - Tipografia do Itaú: https://gkpb.com.br/27556/nova-fonte-itau/
+- Pickup color: https://imagecolorpicker.com/
