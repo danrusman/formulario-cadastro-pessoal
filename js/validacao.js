@@ -6,7 +6,6 @@ function validar() {
     var telefoneCelular = document.getElementById("telefoneCelular");
     var termo = document.getElementById("termo");
 
-
     /*Validação de CPF - Inicio*/
     function TestaCPF(strCPF) {
         var Soma;
@@ -69,7 +68,6 @@ function validar() {
         return;
     }
     /*Validacao de campos obrigatorios - Fim*/
-
 
     alert("Formulário enviado com sucesso!");
 }
