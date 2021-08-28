@@ -6,11 +6,13 @@
 #titulo {
     font-family: sans-serif;
     margin-left: 7%;
+    color: #FFEF00;
 }
 
 #subTitulo {
     font-family: sans-serif;
-    margin-left: 7%;
+    margin-left: 10%;
+    color: #FFEF00;
 }
 
 fieldset {
@@ -19,4 +21,25 @@ fieldset {
 
 body {
     background-color: #FF7200;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #FFEF00;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
 }
+
+input, select, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #F79C60;
+    display: block;
+}
+
