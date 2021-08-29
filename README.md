@@ -16,7 +16,12 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 - Netlify, link: https://danrusman-cadastro-pessoal.netlify.app/
 
 ### Funcionalidades
-- Preenchimento automático de Estado, Cidade, Bairro e Endereço a partir de CEP.
+- Preenchimento automático dos campos "Estado", "Cidade", "Bairro" e "Endereço" a partir de "CEP"
+- Os campos possuem máscaras para facilitar na leitura do usuário e ter a resposta de que a página responde aos comandos
+
+### Pontos de atenção
+- De acordo com a regra de negócio informado no desafio acima, o campo "Sexo" possui uma falha, pois o usuário pode não informar e deixar em branco. Se possível, voltaria com o responsável pela definição da regra de negócio e discutiria se tal definição faz sentido
+- Apesar da obrigatoriedade do campo de aceitação do termo de Política de Privacidade, a página processa as informações incluídas pelo próprio usuário para o amarzenamento em um banco de dados, deixei claro para o usuário que cumprimos as determinações impostas pela Lei Geral de Proteção de Dados.
 
 ### Referências
 - Formulário: https://www.youtube.com/watch?v=wwqOJ2o84S4
@@ -37,7 +42,7 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 - Campos: https://medium.com/@jezmael/como-validar-os-dados-de-um-formul%C3%A1rio-com-javascript-abdc5a5fba67
 
 ### Extra
-Neste desafio experimentei como é desenvolver uma página sem uma base de UI/UX. Refleti que o início de partida levou mais tempo para organizar o layout, descrevendo as dificuldades encontradas: como ficaria os campos? Qual tipografia usar? Tamanho da fonte atende? Quais cores usar e a insegurança na apresentação do resultado para o cliente. Diferentemente do projeto de desenvolvimento de página de [notícia sobre covid-19](https://github.com/danrusman/noticia-covid-19) que a modelagem foi a primeira a ser desenhada expondo as ideias em mente e depois foi apresentada para a equipe e posteriormente partimos para a codificação.</br>Destaco a importância de ter uma base consistente, verificada e validada para que o desenvolvimento e entrega atinja o resultado esperado de todos os envolvidos.
+Neste desafio experimentei como é desenvolver uma página sem uma base de UI/UX. Refleti que o início de partida levou mais tempo para organizar a ideia e o layout ideal. Descrevo as dificuldades encontradas durante o desenvolvimento: Como ficaria os campos? Qual tipografia usar? O tamanho da fonte e as cores usadas atende? E o mais abalável foi a insegurança na apresentação do resultado para o cliente. Diferentemente do projeto de desenvolvimento de página de [notícia sobre covid-19](https://github.com/danrusman/noticia-covid-19) em que a modelagem foi a primeira a ser desenhada expondo as ideias em mente e depois foi apresentada para a equipe e posteriormente partida para a codificação.</br>Destaco a importância de ter uma base consistente, verificada e validada para que o desenvolvimento e a entrega atinja o resultado esperado de todos os envolvidos.
 
 ### Autoria
 - [Daniel Russo Manrique](https://github.com/danrusman)
