@@ -19,9 +19,10 @@ function meu_callback(conteudo) {
         alert("CEP não encontrado.");
     }
 }
-    
-function pesquisacep(valor) {
 
+// monitora quando o elemento sofre mudança e executa a função
+document.getElementById('cep').onchange = function pesquisacep() {
+    var valor = document.getElementById('cep').value;
     //Nova variável "cep" somente com dígitos.
     var cep = valor.replace(/\D/g, '');
 

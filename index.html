@@ -7,10 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Pessoal</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src='js/buscaCEP.js'></script>
-    <script src="js/mascaraCpf.js"></script>
-    <script src="js/mascaraRg.js"></script>
-    <script src='js/validacao.js'></script>
 </head>
 
 <body>
@@ -24,12 +20,12 @@
         <fieldset id="dados">
             <div>
                 <label class="campo">Nome*</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required>
             </div>
 
             <div class="cpf">
                 <label class="campo">CPF*</label>
-                <input name="cpf" id="cpf" type="text" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="13"/>
+                <input name="cpf" id="cpf" type="text" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="13"required />
                 <!--<input type="text" name="cpf" id="cpf">-->
             </div>
 
@@ -52,7 +48,7 @@
                 <label class="campo">CEP</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
                 <!--<input type="text" name="cep" id="cep">-->
-                <button type="button" name="buscarCep" id="buscarCep" onclick="buscarCep()">Preencher automaticamente</button>
+                <!--<button type="button" name="buscarCep" id="buscarCep" onclick="buscarCep()">Preencher automaticamente</button>-->
             </div>
 
             <div>
@@ -75,18 +71,18 @@
 
             <div>
                 <label class="campo">Endereço*</label>
-                <input name="endereco" type="text" id="endereco" size="60"/>
+                <input name="endereco" type="text" id="endereco" size="60" required/>
                 <!--<input type="text" name="endereco" id="endereco" required>-->
             </div>
 
             <div>
                 <label class="campo">Número*</label>
-                <input type="text" name="numero" id="numero">
+                <input type="text" name="numero" id="numero" required>
             </div>
 
             <div class="campo">
                 <label>Celular*</label>
-                <input type="text" name="telefoneCelular" id="telefoneCelular" maxlength="15">
+                <input type="text" name="telefoneCelular" id="telefoneCelular" maxlength="15" required>
             </div>
 
             <div class="campo">
@@ -98,7 +94,7 @@
                 <input type="checkbox" name="termo" id="termo"> Enviando este formulário você aceita e
                 concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
             </div>
-            <button type="submit" name="enviar" id="enviar" onclick="validar()">Enviar</button>
+            <button type="submit" name="enviar" id="enviar" >Enviar</button>
         </fieldset>
     </form>
 
@@ -107,6 +103,12 @@
             <p>© 2021 - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src='js/buscaCEP.js'></script>
+    <script src="js/mascaraCpf.js"></script>
+    <script src="js/mascaraRg.js"></script>
+    <script src='js/validacao.js'></script>
+
 </body>
 
 </html>
