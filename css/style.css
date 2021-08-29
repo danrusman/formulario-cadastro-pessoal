@@ -68,13 +68,14 @@ label {
 }
 
 #enviar {
-    width: 100%;
+    width: 60%;
     background: #003399;
     border: none;
     color: #fefc03;
     border-radius: 5px;
     padding: 8px;
     margin: 0 0 20px 0;
+    align-self: center;
 }
 
 #enviar:hover, #buscarCep:hover {

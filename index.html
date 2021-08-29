@@ -16,18 +16,18 @@
     <div>
         <img id="logoItau" src="imagens/logo_itau.png" alt="Logo do Itaú">
         <h1>Cadastro Pessoal</h1>
-        <p>Preencha os campos abaixo</p>
+        <p>Faça um cadastro para abrir uma conta-corrente</p>
     </div>
 
     <form method="POST" action="" id="formulario" name="formulario">
         <fieldset id="dados">
             <div>
-                <label class="campo">Nome</label>
+                <label class="campo">Nome*</label>
                 <input type="text" name="nome" id="nome">
             </div>
 
             <div class="cpf">
-                <label class="campo">CPF</label>
+                <label class="campo">CPF*</label>
                 <input type="text" name="cpf" id="cpf">
             </div>
             
@@ -49,7 +49,7 @@
                 <label class="campo">CEP</label>
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
                 <!--<input type="text" name="cep" id="cep">-->
-                <button type="button" name="buscarCep" id="buscarCep" onclick="buscarCep()">Buscar CEP</button>
+                <button type="button" name="buscarCep" id="buscarCep" onclick="buscarCep()">Preencher automaticamente</button>
             </div>
 
             <div>
@@ -71,18 +71,18 @@
             </div>
 
             <div>
-                <label class="campo">Endereço</label>
+                <label class="campo">Endereço*</label>
                 <input name="endereco" type="text" id="endereco" size="60"/>
                 <!--<input type="text" name="endereco" id="endereco" required>-->
             </div>
 
             <div>
-                <label class="campo">Número</label>
-                <input type="text" name="numero" id="numero" required>
+                <label class="campo">Número*</label>
+                <input type="text" name="numero" id="numero">
             </div>
 
             <div class="campo">
-                <label>Telefone Celular</label>
+                <label>Celular*</label>
                 <input type="text" name="telefoneCelular" id="telefoneCelular">
             </div>
 
