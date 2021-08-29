@@ -17,6 +17,7 @@
     </div>
 
     <form method="POST" action="" id="formulario" name="formulario">
+        <!-- Definição de campos - Início -->
         <fieldset id="dados">
             <div>
                 <label class="campo">Nome*</label>
@@ -26,13 +27,11 @@
             <div class="cpf">
                 <label class="campo">CPF*</label>
                 <input name="cpf" id="cpf" type="text" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="13" required/>
-                <!--<input type="text" name="cpf" id="cpf">-->
             </div>
 
             <div class="rg">
                 <label class="campo">RG</label>
-                <input type="text" onfocus="javascript: Rg(this);" onblur="javascript: Rg(this);" maxlength="11"/>
-                <!--<input type="text" name="rg" id="rg">-->
+                <input type="text" onblur="javascript: formatarCampoRg(this);" maxlength="11"/>
             </div>
 
             <div class="sexo">
@@ -46,33 +45,27 @@
 
             <div>
                 <label class="campo">CEP</label>
-                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" />
-                <!--<input type="text" name="cep" id="cep">-->
-                <!--<button type="button" name="buscarCep" id="buscarCep" onclick="buscarCep()">Preencher automaticamente</button>-->
+                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" onblur="javascript: formatarCampoCep(this);"/>
             </div>
 
             <div>
                 <label class="campo">Estado</label>
                 <input name="uf" type="text" id="uf" size="2"/>
-                <!--<input type="text" name="estado" id="estado">-->
             </div>
 
             <div>
                 <label class="campo">Cidade</label>
                 <input name="cidade" type="text" id="cidade" size="40"/>
-                <!--<input type="text" name="cidade" id="cidade">-->
             </div>
 
             <div>
                 <label class="campo">Bairro</label>
                 <input name="bairro" type="text" id="bairro" size="40"/>
-                <!--<input type="text" name="bairro" id="bairro">-->
             </div>
 
             <div>
                 <label class="campo">Endereço*</label>
                 <input name="endereco" type="text" id="endereco" size="60" required/>
-                <!--<input type="text" name="endereco" id="endereco" required>-->
             </div>
 
             <div>
@@ -82,12 +75,12 @@
 
             <div class="campo">
                 <label>Celular*</label>
-                <input type="text" name="telefoneCelular" id="telefoneCelular" maxlength="15" required>
+                <input type="text" name="telefoneCelular" id="telefoneCelular" maxlength="15" onblur="javascript: formatarCampoCelular(this);" required>
             </div>
 
             <div class="campo">
                 <label>Telefone Fixo</label>
-                <input type="text" name="telefoneFixo" id="telefoneFixo" maxlength="14">
+                <input type="text" name="telefoneFixo" id="telefoneFixo" maxlength="14" onblur="javascript: formatarCampoTelefoneFixo(this);">
             </div>
 
             <div class="termo">
@@ -95,6 +88,7 @@
                 concorda com os termos de Política de Privacidade e com a LGPD vigentes.<br>
             </div>
             <button type="submit" name="enviar" id="enviar" >Enviar</button>
+            <!-- Definição de campos - Fim -->
         </fieldset>
     </form>
 
@@ -111,6 +105,7 @@
     <script src="js/mascaraRg.js"></script>
     <script src="js/mascaraTelefoneFixo.js"></script>
     <script src='js/validacao.js'></script>
+
 </body>
 
 </html>

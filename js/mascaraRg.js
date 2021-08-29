@@ -1,7 +1,10 @@
 /* Máscara de RG - Início */
-function Rg(v){
-    v=v.replace(/\D/g,"");
-    v=v.replace(/^[0-9]{2,3}\.?[0-9]{2,3}\.?[0-9]{3}\-?[A-Za-z0-9]{1}$/ ,"$1.$2.$3-$4");
-    return v;
+function formatarCampoRg(campoTexto) {
+    campoTexto.value = mascaraRg(campoTexto.value);
 }
+
+function mascaraRg(valor) {
+    return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{1})/g,"\$1.\$2.\$3\-\$4");
+} 
+
 /* Máscara de RG - Fim */
