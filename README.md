@@ -17,11 +17,14 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 
 ### Funcionalidades
 - Preenchimento automático dos campos "Estado", "Cidade", "Bairro" e "Endereço" a partir de "CEP"
-- Os campos possuem máscaras para facilitar na leitura do usuário e ter a resposta de que a página responde aos comandos
+- Os campos possuem máscaras para facilitar a leitura do usuário
 
 ### Pontos de atenção
 - De acordo com a regra de negócio informado no desafio acima, o campo "Sexo" possui uma falha, pois o usuário pode não informar e deixar em branco. Se possível, voltaria com o responsável pela definição da regra de negócio e discutiria se tal definição faz sentido
-- Apesar da obrigatoriedade do campo de aceitação do termo de Política de Privacidade, a página processa as informações incluídas pelo próprio usuário para o amarzenamento em um banco de dados, deixei claro para o usuário que cumprimos as determinações impostas pela Lei Geral de Proteção de Dados.
+- Apesar de não estar definido a obrigatoriedade do campo de aceitação do termo de Política de Privacidade na regra de negócio, a página processa as informações incluídas pelo próprio usuário para o amarzenamento em um banco de dados, deixei claro para o usuário que cumprimos as determinações impostas pela Lei Geral de Proteção de Dados
+
+### Testes
+- Gerar pessoas: https://www.4devs.com.br/gerador_de_pessoas
 
 ### Referências
 - Formulário: https://www.youtube.com/watch?v=wwqOJ2o84S4
@@ -31,11 +34,8 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 - Pickup color: https://imagecolorpicker.com/
 
 #### Máscara
-- CPF: https://pt.stackoverflow.com/questions/278167/mascara-para-cpf-ou-cnpj-sem-usar-plugins
-- CEP: 
-- RG: 
-- Celular: https://codepen.io/adelmodias/pen/aKVwoE
-- Telefone Fixo: 
+- CPF: https://pt.stackoverflow.com/questions/278167/mascara-para-cpf-ou-cnpj-sem-usar-plugins (adaptado)
+- CEP, RG, Celular e Telefone Fixo: Máscaras adaptadas conforme link da máscara de CPF
 
 #### Validação:
 - CPF: https://www.devmedia.com.br/validar-cpf-com-javascript/23916
