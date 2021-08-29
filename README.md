@@ -29,6 +29,8 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 - CPF: https://pt.stackoverflow.com/questions/278167/mascara-para-cpf-ou-cnpj-sem-usar-plugins
 - CEP: 
 - RG: 
+- Celular: https://codepen.io/adelmodias/pen/aKVwoE
+- Telefone Fixo: 
 
 #### Validação:
 - CPF: https://www.devmedia.com.br/validar-cpf-com-javascript/23916
