@@ -21,7 +21,7 @@ Detalhes do Desafio disponível em: https://github.com/educacao-gama/desafios-ga
 
 ### Pontos de atenção
 - De acordo com a regra de negócio informado no desafio acima, o campo "Sexo" possui uma falha, pois o usuário pode não informar e deixar em branco. Se possível, voltaria com o responsável pela definição da regra de negócio e discutiria se tal definição faz sentido
-- Apesar de não estar definido a obrigatoriedade do campo de aceitação do termo de Política de Privacidade na regra de negócio, a página processa as informações incluídas pelo próprio usuário para o amarzenamento em um banco de dados, deixei claro para o usuário que cumprimos as determinações impostas pela Lei Geral de Proteção de Dados
+- Apesar de não estar definido a obrigatoriedade do campo de aceitação do Termo de Política de Privacidade na regra de negócio, a página solicita as informações do usuário, deixei claro que cumprimos as determinações impostas pela Lei Geral de Proteção de Dados
 
 ### Testes
 - Gerar pessoas: https://www.4devs.com.br/gerador_de_pessoas
